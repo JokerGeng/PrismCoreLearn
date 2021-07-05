@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrismCoreLearn", "PrismCoreLearn\PrismCoreLearn.csproj", "{75B8154E-91EC-4CAB-B689-5544BD98D443}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MlduleConfig", "MlduleConfig\MlduleConfig.csproj", "{CF801785-EF80-492C-B1A8-0E66594DC7D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModuleConfig", "MlduleConfig\ModuleConfig.csproj", "{CF801785-EF80-492C-B1A8-0E66594DC7D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

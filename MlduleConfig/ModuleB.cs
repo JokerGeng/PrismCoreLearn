@@ -1,25 +1,29 @@
-using ModuleConfig.Views;
+锘縰sing ModuleConfig.Views;
 using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace MlduleConfig
+namespace ModuleConfig
 {
-    public class ModuleA : IModule
+    public class ModuleB : IModule
     {
         public void OnInitialized(IContainerProvider containerProvider)
         {
             var regionManage = containerProvider.Resolve<IRegionManager>();
 
-            //指定区域注册页面
-            //方式一
-            regionManage.RegisterViewWithRegion("ContentRegion", typeof(Content));
+            //鎸囧畾鍖哄煙娉ㄥ唽椤甸潰
+            //鏂瑰紡涓�
+            regionManage.RegisterViewWithRegion("ContentRegion", typeof(OtherContent));
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-           
+            
         }
     }
 }
