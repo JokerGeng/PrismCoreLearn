@@ -1,4 +1,5 @@
-﻿using Prism.DryIoc;
+﻿using ModuleConfig;
+using Prism.DryIoc;
 using Prism.Ioc;
 using Prism.Modularity;
 using PrismCoreLearn.ViewModels.Dialogs;
@@ -42,13 +43,22 @@ namespace PrismCoreLearn
             ////moduleCatalog.AddModule<ModuleB>();
 
             ////将ModuleB模块设置为按需加载
-            //var moduleBType = typeof(ModuleB);
-            //moduleCatalog.AddModule(new ModuleInfo()
-            //{
-            //    ModuleName = moduleBType.Name,
-            //    ModuleType = moduleBType.AssemblyQualifiedName,
-            //    InitializationMode = InitializationMode.OnDemand
-            //});
+            var moduleAType = typeof(ModuleA);
+            moduleCatalog.AddModule(new ModuleInfo()
+            {
+                ModuleName = moduleAType.Name,
+                ModuleType = moduleAType.AssemblyQualifiedName,
+                InitializationMode = InitializationMode.OnDemand
+            });
+
+            ////将ModuleB模块设置为按需加载
+            var moduleBType = typeof(ModuleB);
+            moduleCatalog.AddModule(new ModuleInfo()
+            {
+                ModuleName = moduleBType.Name,
+                ModuleType = moduleBType.AssemblyQualifiedName,
+                InitializationMode = InitializationMode.OnDemand
+            });
         }
 
         /*

@@ -23,6 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ModuleConfig\ModuleConfig.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Fonts\iconfont.ttf" />
   </ItemGroup>
 

@@ -4,7 +4,7 @@ using Prism.Modularity;
 using Prism.Regions;
 using System;
 
-namespace MlduleConfig
+namespace ModuleConfig
 {
     public class ModuleA : IModule
     {
