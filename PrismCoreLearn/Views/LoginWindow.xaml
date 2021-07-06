@@ -16,7 +16,10 @@
             <i:InvokeCommandAction Command="{Binding LoginLoadingCommand}"/>
         </i:EventTrigger>
     </i:Interaction.Triggers>
-    <Grid>
+    <StackPanel>
         <ContentControl prism:RegionManager.RegionName="{x:Static region:RegionNames.LoginContentRegion}" Margin="5"/>
-    </Grid>
+        <ContentControl prism:RegionManager.RegionName="{x:Static region:RegionNames.ContentRegionA}" Margin="5"/>
+        <ContentControl prism:RegionManager.RegionName="{x:Static region:RegionNames.ContentRegionB}" Margin="5"/>
+        <Button Height="40" Content="LoadModule" Command="{Binding LoadModuleCommand}"/>
+    </StackPanel>
 </Window>

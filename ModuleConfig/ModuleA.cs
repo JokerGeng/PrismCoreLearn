@@ -14,7 +14,7 @@ namespace ModuleConfig
 
             //指定区域注册页面
             //方式一
-            regionManage.RegisterViewWithRegion("ContentRegion", typeof(Content));
+            regionManage.RegisterViewWithRegion("ContentRegionA", typeof(Content));
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)

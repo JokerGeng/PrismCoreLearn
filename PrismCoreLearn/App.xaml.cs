@@ -38,18 +38,8 @@ namespace PrismCoreLearn
         }
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
-            ////(代码方式)Code
-            //moduleCatalog.AddModule<ModuleA>();
-            ////moduleCatalog.AddModule<ModuleB>();
-
-            ////将ModuleB模块设置为按需加载
-            var moduleAType = typeof(ModuleA);
-            moduleCatalog.AddModule(new ModuleInfo()
-            {
-                ModuleName = moduleAType.Name,
-                ModuleType = moduleAType.AssemblyQualifiedName,
-                InitializationMode = InitializationMode.OnDemand
-            });
+            //(代码方式)Code
+            moduleCatalog.AddModule<ModuleA>();
 
             ////将ModuleB模块设置为按需加载
             var moduleBType = typeof(ModuleB);

@@ -16,6 +16,8 @@ namespace PrismCoreLearn
 
         public static string UniformContentRegion = "UniformContentRegion";
 
-        public static string LoginContentRegion = "LoginContentRegion";
+        public static string LoginContentRegion = "LoginContentRegion"; 
+        public static string ContentRegionA = "ContentRegionA"; 
+        public static string ContentRegionB = "ContentRegionB";
     }
 }
