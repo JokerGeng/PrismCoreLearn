@@ -94,6 +94,8 @@ namespace PrismCoreLearn.ViewModels
             //    return;
             //}
             //ShellSwitcher.Switch<LoginWindow, MainWindow>();
+            MainWindow main = new MainWindow();
+            main.Show();
         }
 
         private void ExecuteGoForwardCommand()

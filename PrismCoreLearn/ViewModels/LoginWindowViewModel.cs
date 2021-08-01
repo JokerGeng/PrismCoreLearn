@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using ModuleConfig;
+using Prism.Commands;
 using Prism.Modularity;
 using Prism.Mvvm;
 using Prism.Regions;
@@ -52,7 +53,8 @@ namespace PrismCoreLearn.ViewModels
 
         void ExecuteLoadModuleCommand()
         {
-            _moduleManager.LoadModule("ModuleB");
+            //_moduleManager.LoadModule("ModuleB");
+            _moduleManager.LoadModule<ModuleB>();
         }
     }
 }
